@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63163841A8E390F7B21DA7E9 /* Pods_MemoriaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CCBF02A4F6FA8D4564FEC4 /* Pods_MemoriaTests.framework */; };
+		957775B328899935006C1362 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957775B228899935006C1362 /* GameViewController.swift */; };
+		95F490F22888AF7200E15D31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F490F12888AF7200E15D31 /* AppDelegate.swift */; };
+		95F490F42888AF7200E15D31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F490F32888AF7200E15D31 /* SceneDelegate.swift */; };
+		95F490F62888AF7200E15D31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F490F52888AF7200E15D31 /* ViewController.swift */; };
+		95F490FB2888AF7300E15D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F490FA2888AF7300E15D31 /* Assets.xcassets */; };
+		95F490FE2888AF7300E15D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F490FC2888AF7300E15D31 /* LaunchScreen.storyboard */; };
+		95F491092888AF7300E15D31 /* MemoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F491082888AF7300E15D31 /* MemoriaTests.swift */; };
+		95F491132888AF7300E15D31 /* MemoriaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F491122888AF7300E15D31 /* MemoriaUITests.swift */; };
+		95F491152888AF7300E15D31 /* MemoriaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F491142888AF7300E15D31 /* MemoriaUITestsLaunchTests.swift */; };
+		EACFCBA45CA5FDFBFB3EC775 /* Pods_Memoria_MemoriaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125951CF0BF919D51805DE18 /* Pods_Memoria_MemoriaUITests.framework */; };
+		F93E0C4D0EE57E257A3120A4 /* Pods_Memoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB57857BF0E1D57AE6BC8CD /* Pods_Memoria.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95F491052888AF7300E15D31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95F490E62888AF7200E15D31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95F490ED2888AF7200E15D31;
+			remoteInfo = Memoria;
+		};
+		95F4910F2888AF7300E15D31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95F490E62888AF7200E15D31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95F490ED2888AF7200E15D31;
+			remoteInfo = Memoria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		125951CF0BF919D51805DE18 /* Pods_Memoria_MemoriaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memoria_MemoriaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E5D6AB31151C7BA2F066C3 /* Pods-Memoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.debug.xcconfig"; path = "Target Support Files/Pods-Memoria/Pods-Memoria.debug.xcconfig"; sourceTree = "<group>"; };
+		63CCBF02A4F6FA8D4564FEC4 /* Pods_MemoriaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoriaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD777796122E903C1C32B01 /* Pods-Memoria-MemoriaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria-MemoriaUITests.release.xcconfig"; path = "Target Support Files/Pods-Memoria-MemoriaUITests/Pods-Memoria-MemoriaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		92636009BB1D3ABC1CCEEC3F /* Pods-MemoriaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoriaTests.debug.xcconfig"; path = "Target Support Files/Pods-MemoriaTests/Pods-MemoriaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		957775B228899935006C1362 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		95F490EE2888AF7200E15D31 /* Memoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F490F12888AF7200E15D31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95F490F32888AF7200E15D31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95F490F52888AF7200E15D31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95F490FA2888AF7300E15D31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95F490FD2888AF7300E15D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95F490FF2888AF7300E15D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F491042888AF7300E15D31 /* MemoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F491082888AF7300E15D31 /* MemoriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaTests.swift; sourceTree = "<group>"; };
+		95F4910E2888AF7300E15D31 /* MemoriaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoriaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95F491122888AF7300E15D31 /* MemoriaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaUITests.swift; sourceTree = "<group>"; };
+		95F491142888AF7300E15D31 /* MemoriaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5AFB4119571038E993C5DDF /* Pods-Memoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria.release.xcconfig"; path = "Target Support Files/Pods-Memoria/Pods-Memoria.release.xcconfig"; sourceTree = "<group>"; };
+		E99E8F930BC0F304D4E0C6D3 /* Pods-Memoria-MemoriaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria-MemoriaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Memoria-MemoriaUITests/Pods-Memoria-MemoriaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F571A5A146A63BA84E457AA5 /* Pods-MemoriaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoriaTests.release.xcconfig"; path = "Target Support Files/Pods-MemoriaTests/Pods-MemoriaTests.release.xcconfig"; sourceTree = "<group>"; };
+		FAB57857BF0E1D57AE6BC8CD /* Pods_Memoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95F490EB2888AF7200E15D31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93E0C4D0EE57E257A3120A4 /* Pods_Memoria.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F491012888AF7300E15D31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63163841A8E390F7B21DA7E9 /* Pods_MemoriaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F4910B2888AF7300E15D31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EACFCBA45CA5FDFBFB3EC775 /* Pods_Memoria_MemoriaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		589D32F25DA1CEB0F311A7D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB57857BF0E1D57AE6BC8CD /* Pods_Memoria.framework */,
+				125951CF0BF919D51805DE18 /* Pods_Memoria_MemoriaUITests.framework */,
+				63CCBF02A4F6FA8D4564FEC4 /* Pods_MemoriaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75713D9BCE22832D4E7CEB5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28E5D6AB31151C7BA2F066C3 /* Pods-Memoria.debug.xcconfig */,
+				D5AFB4119571038E993C5DDF /* Pods-Memoria.release.xcconfig */,
+				E99E8F930BC0F304D4E0C6D3 /* Pods-Memoria-MemoriaUITests.debug.xcconfig */,
+				8CD777796122E903C1C32B01 /* Pods-Memoria-MemoriaUITests.release.xcconfig */,
+				92636009BB1D3ABC1CCEEC3F /* Pods-MemoriaTests.debug.xcconfig */,
+				F571A5A146A63BA84E457AA5 /* Pods-MemoriaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		95F490E52888AF7200E15D31 = {
+			isa = PBXGroup;
+			children = (
+				95F490F02888AF7200E15D31 /* Memoria */,
+				95F491072888AF7300E15D31 /* MemoriaTests */,
+				95F491112888AF7300E15D31 /* MemoriaUITests */,
+				95F490EF2888AF7200E15D31 /* Products */,
+				75713D9BCE22832D4E7CEB5C /* Pods */,
+				589D32F25DA1CEB0F311A7D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95F490EF2888AF7200E15D31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95F490EE2888AF7200E15D31 /* Memoria.app */,
+				95F491042888AF7300E15D31 /* MemoriaTests.xctest */,
+				95F4910E2888AF7300E15D31 /* MemoriaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95F490F02888AF7200E15D31 /* Memoria */ = {
+			isa = PBXGroup;
+			children = (
+				95F490F12888AF7200E15D31 /* AppDelegate.swift */,
+				95F490F32888AF7200E15D31 /* SceneDelegate.swift */,
+				95F490F52888AF7200E15D31 /* ViewController.swift */,
+				95F490FA2888AF7300E15D31 /* Assets.xcassets */,
+				95F490FC2888AF7300E15D31 /* LaunchScreen.storyboard */,
+				95F490FF2888AF7300E15D31 /* Info.plist */,
+				957775B228899935006C1362 /* GameViewController.swift */,
+			);
+			path = Memoria;
+			sourceTree = "<group>";
+		};
+		95F491072888AF7300E15D31 /* MemoriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				95F491082888AF7300E15D31 /* MemoriaTests.swift */,
+			);
+			path = MemoriaTests;
+			sourceTree = "<group>";
+		};
+		95F491112888AF7300E15D31 /* MemoriaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95F491122888AF7300E15D31 /* MemoriaUITests.swift */,
+				95F491142888AF7300E15D31 /* MemoriaUITestsLaunchTests.swift */,
+			);
+			path = MemoriaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95F490ED2888AF7200E15D31 /* Memoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F491182888AF7300E15D31 /* Build configuration list for PBXNativeTarget "Memoria" */;
+			buildPhases = (
+				D732D298D72E152EB144455C /* [CP] Check Pods Manifest.lock */,
+				95F490EA2888AF7200E15D31 /* Sources */,
+				95F490EB2888AF7200E15D31 /* Frameworks */,
+				95F490EC2888AF7200E15D31 /* Resources */,
+				BDD78E0EDE45B7D15B51185F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Memoria;
+			productName = Memoria;
+			productReference = 95F490EE2888AF7200E15D31 /* Memoria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95F491032888AF7300E15D31 /* MemoriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F4911B2888AF7300E15D31 /* Build configuration list for PBXNativeTarget "MemoriaTests" */;
+			buildPhases = (
+				4BF6BB736674A9BAD25E1C8C /* [CP] Check Pods Manifest.lock */,
+				95F491002888AF7300E15D31 /* Sources */,
+				95F491012888AF7300E15D31 /* Frameworks */,
+				95F491022888AF7300E15D31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95F491062888AF7300E15D31 /* PBXTargetDependency */,
+			);
+			name = MemoriaTests;
+			productName = MemoriaTests;
+			productReference = 95F491042888AF7300E15D31 /* MemoriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95F4910D2888AF7300E15D31 /* MemoriaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F4911E2888AF7300E15D31 /* Build configuration list for PBXNativeTarget "MemoriaUITests" */;
+			buildPhases = (
+				57C596E9C65BF7D2040D6CB2 /* [CP] Check Pods Manifest.lock */,
+				95F4910A2888AF7300E15D31 /* Sources */,
+				95F4910B2888AF7300E15D31 /* Frameworks */,
+				95F4910C2888AF7300E15D31 /* Resources */,
+				421BF26151E264111DF4FD96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95F491102888AF7300E15D31 /* PBXTargetDependency */,
+			);
+			name = MemoriaUITests;
+			productName = MemoriaUITests;
+			productReference = 95F4910E2888AF7300E15D31 /* MemoriaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95F490E62888AF7200E15D31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					95F490ED2888AF7200E15D31 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					95F491032888AF7300E15D31 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 95F490ED2888AF7200E15D31;
+					};
+					95F4910D2888AF7300E15D31 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 95F490ED2888AF7200E15D31;
+					};
+				};
+			};
+			buildConfigurationList = 95F490E92888AF7200E15D31 /* Build configuration list for PBXProject "Memoria" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95F490E52888AF7200E15D31;
+			productRefGroup = 95F490EF2888AF7200E15D31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95F490ED2888AF7200E15D31 /* Memoria */,
+				95F491032888AF7300E15D31 /* MemoriaTests */,
+				95F4910D2888AF7300E15D31 /* MemoriaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95F490EC2888AF7200E15D31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F490FE2888AF7300E15D31 /* LaunchScreen.storyboard in Resources */,
+				95F490FB2888AF7300E15D31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F491022888AF7300E15D31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F4910C2888AF7300E15D31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		421BF26151E264111DF4FD96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memoria-MemoriaUITests/Pods-Memoria-MemoriaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memoria-MemoriaUITests/Pods-Memoria-MemoriaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Memoria-MemoriaUITests/Pods-Memoria-MemoriaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BF6BB736674A9BAD25E1C8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoriaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57C596E9C65BF7D2040D6CB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memoria-MemoriaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD78E0EDE45B7D15B51185F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memoria/Pods-Memoria-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Memoria/Pods-Memoria-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Memoria/Pods-Memoria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D732D298D72E152EB144455C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memoria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95F490EA2888AF7200E15D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957775B328899935006C1362 /* GameViewController.swift in Sources */,
+				95F490F62888AF7200E15D31 /* ViewController.swift in Sources */,
+				95F490F22888AF7200E15D31 /* AppDelegate.swift in Sources */,
+				95F490F42888AF7200E15D31 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F491002888AF7300E15D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F491092888AF7300E15D31 /* MemoriaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95F4910A2888AF7300E15D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95F491132888AF7300E15D31 /* MemoriaUITests.swift in Sources */,
+				95F491152888AF7300E15D31 /* MemoriaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95F491062888AF7300E15D31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95F490ED2888AF7200E15D31 /* Memoria */;
+			targetProxy = 95F491052888AF7300E15D31 /* PBXContainerItemProxy */;
+		};
+		95F491102888AF7300E15D31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95F490ED2888AF7200E15D31 /* Memoria */;
+			targetProxy = 95F4910F2888AF7300E15D31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95F490FC2888AF7300E15D31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95F490FD2888AF7300E15D31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95F491162888AF7300E15D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95F491172888AF7300E15D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95F491192888AF7300E15D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28E5D6AB31151C7BA2F066C3 /* Pods-Memoria.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Memoria/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwi.Memoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95F4911A2888AF7300E15D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AFB4119571038E993C5DDF /* Pods-Memoria.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Memoria/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwi.Memoria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95F4911C2888AF7300E15D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92636009BB1D3ABC1CCEEC3F /* Pods-MemoriaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwi.MemoriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memoria.app/Memoria";
+			};
+			name = Debug;
+		};
+		95F4911D2888AF7300E15D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F571A5A146A63BA84E457AA5 /* Pods-MemoriaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwi.MemoriaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memoria.app/Memoria";
+			};
+			name = Release;
+		};
+		95F4911F2888AF7300E15D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99E8F930BC0F304D4E0C6D3 /* Pods-Memoria-MemoriaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwi.MemoriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Memoria;
+			};
+			name = Debug;
+		};
+		95F491202888AF7300E15D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CD777796122E903C1C32B01 /* Pods-Memoria-MemoriaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwi.MemoriaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Memoria;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95F490E92888AF7200E15D31 /* Build configuration list for PBXProject "Memoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F491162888AF7300E15D31 /* Debug */,
+				95F491172888AF7300E15D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F491182888AF7300E15D31 /* Build configuration list for PBXNativeTarget "Memoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F491192888AF7300E15D31 /* Debug */,
+				95F4911A2888AF7300E15D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F4911B2888AF7300E15D31 /* Build configuration list for PBXNativeTarget "MemoriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F4911C2888AF7300E15D31 /* Debug */,
+				95F4911D2888AF7300E15D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F4911E2888AF7300E15D31 /* Build configuration list for PBXNativeTarget "MemoriaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95F4911F2888AF7300E15D31 /* Debug */,
+				95F491202888AF7300E15D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95F490E62888AF7200E15D31 /* Project object */;
+}
