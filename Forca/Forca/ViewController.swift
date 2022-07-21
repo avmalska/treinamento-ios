@@ -90,7 +90,7 @@ class ViewController: UIViewController {
         
         let image: UIImage?
         
-        if jogoDaForca.estadoDoJogo == EstadoDoJogo.derrota {
+        if jogoDaForca.estadoDoJogo == .derrota {
             image = UIImage(named: "bonecao_completo_e_mortinho")
         } else {
             image = UIImage(named: "bonecao_fase_\(jogoDaForca.erros)")
@@ -145,9 +145,9 @@ extension ViewController: UITextFieldDelegate {
             jogoDaForca.tentar(letra: texto)
         }
         
-        if jogoDaForca.estadoDoJogo == EstadoDoJogo.vitoria {
+        if jogoDaForca.estadoDoJogo == .vitoria {
             alert(titulo: "Você acertou, parabéns!")
-        } else if jogoDaForca.estadoDoJogo == EstadoDoJogo.derrota {
+        } else if jogoDaForca.estadoDoJogo == .derrota {
             alert(titulo: "Que pena, você errou", descricao: "Pensa um pouco mais da próxima vez")
         }
         
