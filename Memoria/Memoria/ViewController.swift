@@ -10,15 +10,25 @@ import SnapKit
 
 class ViewController: UIViewController {
     
-    lazy var startGameButton: UIButton = {
+    lazy var reiniciarButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "image 1"), for: .normal)
-        button.addTarget(self, action: #selector(startGame), for: .touchDown)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitle("Reiniciar", for: .normal)
+        button.setImage(UIImage(systemName: "restart.circle"), for: .normal)
+        button.tintColor = .black
+        button.semanticContentAttribute = .forceRightToLeft
+        button.addTarget(self, action: #selector(buttonOnClick), for: .touchDown)
         return button
     }()
     
-    @objc private func startGame() {
-        present(GameViewController(), animated: true)
+    lazy var gameCard: UIImageView = {
+        let gameCard = UIImageView()
+        gameCard.image = UIImage(named: "image 1")
+        return gameCard
+    }()
+    
+    @objc func buttonOnClick() {
+        print("click")
     }
     
     override public var shouldAutorotate: Bool {
@@ -26,11 +36,11 @@ class ViewController: UIViewController {
     }
     
     override public var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .landscapeRight
+        return .landscapeLeft
     }
     
     override public var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
-        return .landscapeRight
+        return .landscapeLeft
     }
 
     override func viewDidLoad() {
@@ -52,11 +62,17 @@ extension ViewController {
     }
     
     func buildViews() {
-        view.addSubview(startGameButton)
+        view.addSubview(reiniciarButton)
+        view.addSubview(gameCard)
     }
     
     func buildConstraints() {
-        startGameButton.snp.makeConstraints { make in
+        reiniciarButton.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(24)
+            make.trailing.equalTo(view.safeAreaLayoutGuide).inset(22)
+        }
+        
+        gameCard.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
     }
