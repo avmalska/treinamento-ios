@@ -2,7 +2,7 @@
 //  ProductCategoriesPresenter.swift
 //  Nospresso
 //
-//  Created by Juan Andrey Valverde Malska on 21/07/22.
+//  Created by Treinamento on 21/07/22.
 //
 
 import Foundation
@@ -10,9 +10,11 @@ import Foundation
 class ProductCategoriesPresenter {
     
     weak var view: ProductCategoriesViewControllerProtocol?
+    let repository: ProductCategoriesRepositoryInputProtocol
     let coordinator: ProductCategoriesCoordinatorProtocol
     
-    init(coordinator: ProductCategoriesCoordinatorProtocol) {
+    init(repository: ProductCategoriesRepositoryInputProtocol, coordinator: ProductCategoriesCoordinatorProtocol) {
+        self.repository = repository
         self.coordinator = coordinator
     }
     
@@ -20,6 +22,16 @@ class ProductCategoriesPresenter {
 
 extension ProductCategoriesPresenter: ProductCategoriesPresenterProtocol {
     
+    func coffeesTouched() {
+        repository.getCoffees()
+    }
     
+    func machinesTouched() {
+        coordinator.openMachines()
+    }
+    
+    func accessoriesTouched() {
+        coordinator.openAccessories()
+    }
     
 }
