@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		63163841A8E390F7B21DA7E9 /* Pods_MemoriaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CCBF02A4F6FA8D4564FEC4 /* Pods_MemoriaTests.framework */; };
+		9556C77C288B08B00042C3C0 /* JogoDaMemoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9556C77B288B08B00042C3C0 /* JogoDaMemoria.swift */; };
 		957775B328899935006C1362 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957775B228899935006C1362 /* GameViewController.swift */; };
 		95F490F22888AF7200E15D31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F490F12888AF7200E15D31 /* AppDelegate.swift */; };
 		95F490F42888AF7200E15D31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F490F32888AF7200E15D31 /* SceneDelegate.swift */; };
@@ -44,6 +45,7 @@
 		63CCBF02A4F6FA8D4564FEC4 /* Pods_MemoriaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoriaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD777796122E903C1C32B01 /* Pods-Memoria-MemoriaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memoria-MemoriaUITests.release.xcconfig"; path = "Target Support Files/Pods-Memoria-MemoriaUITests/Pods-Memoria-MemoriaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92636009BB1D3ABC1CCEEC3F /* Pods-MemoriaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoriaTests.debug.xcconfig"; path = "Target Support Files/Pods-MemoriaTests/Pods-MemoriaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9556C77B288B08B00042C3C0 /* JogoDaMemoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogoDaMemoria.swift; sourceTree = "<group>"; };
 		957775B228899935006C1362 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		95F490EE2888AF7200E15D31 /* Memoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F490F12888AF7200E15D31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				95F490FC2888AF7300E15D31 /* LaunchScreen.storyboard */,
 				95F490FF2888AF7300E15D31 /* Info.plist */,
 				957775B228899935006C1362 /* GameViewController.swift */,
+				9556C77B288B08B00042C3C0 /* JogoDaMemoria.swift */,
 			);
 			path = Memoria;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				95F490F62888AF7200E15D31 /* ViewController.swift in Sources */,
 				95F490F22888AF7200E15D31 /* AppDelegate.swift in Sources */,
 				95F490F42888AF7200E15D31 /* SceneDelegate.swift in Sources */,
+				9556C77C288B08B00042C3C0 /* JogoDaMemoria.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
