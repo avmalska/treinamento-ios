@@ -41,6 +41,9 @@
 		81851238288B2DAB0075C5D3 /* Favorites+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81851237288B2DAB0075C5D3 /* Favorites+Protocols.swift */; };
 		8185123B288B31C20075C5D3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185123A288B31C20075C5D3 /* API.swift */; };
 		8185123E288B32B30075C5D3 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185123D288B32B30075C5D3 /* Coffee.swift */; };
+		9502AB2D288DF8FB001E940E /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9502AB2C288DF8FB001E940E /* Capsule.swift */; };
+		9502AB2F288DFA40001E940E /* CapsuleCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9502AB2E288DFA40001E940E /* CapsuleCoffee.swift */; };
+		9502AB31288DFC77001E940E /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9502AB30288DFC77001E940E /* Machine.swift */; };
 		A725861F67C76031D62914C3 /* Pods_Nospresso_NospressoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7BB57B18C71DA3CD48536E /* Pods_Nospresso_NospressoUITests.framework */; };
 		B0A1721FE9EA4444C1A5D5B6 /* Pods_NospressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6517CD1338AAF0357D22577C /* Pods_NospressoTests.framework */; };
 		C82200C7B224F7F468EB08ED /* Pods_Nospresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D368449C7A611B259DC003 /* Pods_Nospresso.framework */; };
@@ -109,6 +112,9 @@
 		81851237288B2DAB0075C5D3 /* Favorites+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+Protocols.swift"; sourceTree = "<group>"; };
 		8185123A288B31C20075C5D3 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8185123D288B32B30075C5D3 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		9502AB2C288DF8FB001E940E /* Capsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsule.swift; sourceTree = "<group>"; };
+		9502AB2E288DFA40001E940E /* CapsuleCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleCoffee.swift; sourceTree = "<group>"; };
+		9502AB30288DFC77001E940E /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
 		E11187D5149F22F72C074349 /* Pods-NospressoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NospressoTests.release.xcconfig"; path = "Target Support Files/Pods-NospressoTests/Pods-NospressoTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB46361DCA50A5783B0FA17D /* Pods-NospressoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NospressoTests.debug.xcconfig"; path = "Target Support Files/Pods-NospressoTests/Pods-NospressoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -295,6 +301,9 @@
 			isa = PBXGroup;
 			children = (
 				8185123D288B32B30075C5D3 /* Coffee.swift */,
+				9502AB2C288DF8FB001E940E /* Capsule.swift */,
+				9502AB2E288DFA40001E940E /* CapsuleCoffee.swift */,
+				9502AB30288DFC77001E940E /* Machine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -594,12 +603,15 @@
 			files = (
 				8185122D288B2A2F0075C5D3 /* HomeTabBarViewController.swift in Sources */,
 				815F277A2889E6700093D186 /* ProductCategories+Protocols.swift in Sources */,
+				9502AB31288DFC77001E940E /* Machine.swift in Sources */,
 				81851232288B2D7B0075C5D3 /* FavoritesPresenter.swift in Sources */,
+				9502AB2F288DFA40001E940E /* CapsuleCoffee.swift in Sources */,
 				815F27742889E6100093D186 /* ProductCategoriesPresenter.swift in Sources */,
 				81851236288B2D960075C5D3 /* FavoritesCoordinator.swift in Sources */,
 				8185123E288B32B30075C5D3 /* Coffee.swift in Sources */,
 				818511FD288B16A70075C5D3 /* Typealiases.swift in Sources */,
 				818511FA288B162C0075C5D3 /* R.generated.swift in Sources */,
+				9502AB2D288DF8FB001E940E /* Capsule.swift in Sources */,
 				81851238288B2DAB0075C5D3 /* Favorites+Protocols.swift in Sources */,
 				815F27462889E1B90093D186 /* ProductCategoriesViewController.swift in Sources */,
 				81851234288B2D8B0075C5D3 /* FavoritesRepository.swift in Sources */,
