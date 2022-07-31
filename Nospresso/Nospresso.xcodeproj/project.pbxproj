@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		649BCB4328905D3300F743C8 /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB4228905D3300F743C8 /* Capsule.swift */; };
+		649BCB45289065A200F743C8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB44289065A200F743C8 /* Endpoint.swift */; };
+		649BCB47289065C600F743C8 /* APISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB46289065C600F743C8 /* APISupport.swift */; };
+		649BCB4F28906B8400F743C8 /* CoffeesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB4928906B8400F743C8 /* CoffeesCoordinator.swift */; };
+		649BCB5028906B8400F743C8 /* CoffeesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB4A28906B8400F743C8 /* CoffeesPresenter.swift */; };
+		649BCB5128906B8400F743C8 /* CoffeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB4B28906B8400F743C8 /* CoffeesViewController.swift */; };
+		649BCB5228906B8400F743C8 /* CoffeesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB4C28906B8400F743C8 /* CoffeesProtocols.swift */; };
+		649BCB5328906B8400F743C8 /* CoffeesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB4D28906B8400F743C8 /* CoffeesRepository.swift */; };
+		649BCB562890710300F743C8 /* UIViewController+QoL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB552890710300F743C8 /* UIViewController+QoL.swift */; };
+		649BCB592890850800F743C8 /* CoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649BCB582890850800F743C8 /* CoffeeTableViewCell.swift */; };
+		810869262892F616008F2D69 /* CoffeeDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810869202892F616008F2D69 /* CoffeeDetailsCoordinator.swift */; };
+		810869272892F616008F2D69 /* CoffeeDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810869212892F616008F2D69 /* CoffeeDetailsPresenter.swift */; };
+		810869282892F616008F2D69 /* CoffeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810869222892F616008F2D69 /* CoffeeDetailsViewController.swift */; };
+		810869292892F616008F2D69 /* CoffeeDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810869232892F616008F2D69 /* CoffeeDetailsProtocols.swift */; };
+		8108692A2892F616008F2D69 /* CoffeeDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810869242892F616008F2D69 /* CoffeeDetailsRepository.swift */; };
+		8108692D2892FB89008F2D69 /* CoffeeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108692C2892FB89008F2D69 /* CoffeeDetails.swift */; };
+		810869312893036B008F2D69 /* CoffeeIntensity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810869302893036B008F2D69 /* CoffeeIntensity.swift */; };
+		81086933289315B7008F2D69 /* String+AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81086932289315B7008F2D69 /* String+AttributedString.swift */; };
+		8130C4BF2891A74300341D79 /* UIImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130C4BE2891A74300341D79 /* UIImageView+LoadImage.swift */; };
+		8130C4C12891B7BD00341D79 /* Double+Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130C4C02891B7BD00341D79 /* Double+Money.swift */; };
+		8130C4C32891BFA900341D79 /* CoffeeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130C4C22891BFA900341D79 /* CoffeeTableViewHeader.swift */; };
+		8130C4C62891C8CC00341D79 /* LoadingIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8130C4C52891C8CC00341D79 /* LoadingIndicatorViewController.swift */; };
 		815F27422889E1B90093D186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F27412889E1B90093D186 /* AppDelegate.swift */; };
 		815F27442889E1B90093D186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F27432889E1B90093D186 /* SceneDelegate.swift */; };
 		815F27462889E1B90093D186 /* ProductCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F27452889E1B90093D186 /* ProductCategoriesViewController.swift */; };
@@ -41,9 +63,13 @@
 		81851238288B2DAB0075C5D3 /* Favorites+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81851237288B2DAB0075C5D3 /* Favorites+Protocols.swift */; };
 		8185123B288B31C20075C5D3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185123A288B31C20075C5D3 /* API.swift */; };
 		8185123E288B32B30075C5D3 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185123D288B32B30075C5D3 /* Coffee.swift */; };
-		9502AB2D288DF8FB001E940E /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9502AB2C288DF8FB001E940E /* Capsule.swift */; };
-		9502AB2F288DFA40001E940E /* CapsuleCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9502AB2E288DFA40001E940E /* CapsuleCoffee.swift */; };
-		9502AB31288DFC77001E940E /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9502AB30288DFC77001E940E /* Machine.swift */; };
+		81C470B628944733009FAE97 /* MachinesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C470B028944733009FAE97 /* MachinesCoordinator.swift */; };
+		81C470B728944733009FAE97 /* MachinesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C470B128944733009FAE97 /* MachinesPresenter.swift */; };
+		81C470B828944733009FAE97 /* MachinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C470B228944733009FAE97 /* MachinesViewController.swift */; };
+		81C470B928944733009FAE97 /* MachinesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C470B328944733009FAE97 /* MachinesProtocols.swift */; };
+		81C470BA28944733009FAE97 /* MachinesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C470B428944733009FAE97 /* MachinesRepository.swift */; };
+		81C470BD2894495B009FAE97 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C470BC2894495B009FAE97 /* Machine.swift */; };
+		81C470C028944E3C009FAE97 /* MachineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C470BF28944E3C009FAE97 /* MachineViewCell.swift */; };
 		A725861F67C76031D62914C3 /* Pods_Nospresso_NospressoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7BB57B18C71DA3CD48536E /* Pods_Nospresso_NospressoUITests.framework */; };
 		B0A1721FE9EA4444C1A5D5B6 /* Pods_NospressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6517CD1338AAF0357D22577C /* Pods_NospressoTests.framework */; };
 		C82200C7B224F7F468EB08ED /* Pods_Nospresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D368449C7A611B259DC003 /* Pods_Nospresso.framework */; };
@@ -73,7 +99,29 @@
 		377E742E5C2D5A6D5F1D0D06 /* Pods-Nospresso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso.debug.xcconfig"; path = "Target Support Files/Pods-Nospresso/Pods-Nospresso.debug.xcconfig"; sourceTree = "<group>"; };
 		3D7BB57B18C71DA3CD48536E /* Pods_Nospresso_NospressoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nospresso_NospressoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9426759CA7E7714856A7BE /* Pods-Nospresso-NospressoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso-NospressoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		649BCB4228905D3300F743C8 /* Capsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsule.swift; sourceTree = "<group>"; };
+		649BCB44289065A200F743C8 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		649BCB46289065C600F743C8 /* APISupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISupport.swift; sourceTree = "<group>"; };
+		649BCB4928906B8400F743C8 /* CoffeesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeesCoordinator.swift; sourceTree = "<group>"; };
+		649BCB4A28906B8400F743C8 /* CoffeesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeesPresenter.swift; sourceTree = "<group>"; };
+		649BCB4B28906B8400F743C8 /* CoffeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeesViewController.swift; sourceTree = "<group>"; };
+		649BCB4C28906B8400F743C8 /* CoffeesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeesProtocols.swift; sourceTree = "<group>"; };
+		649BCB4D28906B8400F743C8 /* CoffeesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeesRepository.swift; sourceTree = "<group>"; };
+		649BCB552890710300F743C8 /* UIViewController+QoL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+QoL.swift"; sourceTree = "<group>"; };
+		649BCB582890850800F743C8 /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = "<group>"; };
 		6517CD1338AAF0357D22577C /* Pods_NospressoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NospressoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810869202892F616008F2D69 /* CoffeeDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsCoordinator.swift; sourceTree = "<group>"; };
+		810869212892F616008F2D69 /* CoffeeDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsPresenter.swift; sourceTree = "<group>"; };
+		810869222892F616008F2D69 /* CoffeeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsViewController.swift; sourceTree = "<group>"; };
+		810869232892F616008F2D69 /* CoffeeDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsProtocols.swift; sourceTree = "<group>"; };
+		810869242892F616008F2D69 /* CoffeeDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsRepository.swift; sourceTree = "<group>"; };
+		8108692C2892FB89008F2D69 /* CoffeeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDetails.swift; sourceTree = "<group>"; };
+		810869302893036B008F2D69 /* CoffeeIntensity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeIntensity.swift; sourceTree = "<group>"; };
+		81086932289315B7008F2D69 /* String+AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AttributedString.swift"; sourceTree = "<group>"; };
+		8130C4BE2891A74300341D79 /* UIImageView+LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadImage.swift"; sourceTree = "<group>"; };
+		8130C4C02891B7BD00341D79 /* Double+Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Money.swift"; sourceTree = "<group>"; };
+		8130C4C22891BFA900341D79 /* CoffeeTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewHeader.swift; sourceTree = "<group>"; };
+		8130C4C52891C8CC00341D79 /* LoadingIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewController.swift; sourceTree = "<group>"; };
 		815F273E2889E1B90093D186 /* Nospresso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nospresso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		815F27412889E1B90093D186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		815F27432889E1B90093D186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,9 +160,13 @@
 		81851237288B2DAB0075C5D3 /* Favorites+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorites+Protocols.swift"; sourceTree = "<group>"; };
 		8185123A288B31C20075C5D3 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8185123D288B32B30075C5D3 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
-		9502AB2C288DF8FB001E940E /* Capsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsule.swift; sourceTree = "<group>"; };
-		9502AB2E288DFA40001E940E /* CapsuleCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleCoffee.swift; sourceTree = "<group>"; };
-		9502AB30288DFC77001E940E /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
+		81C470B028944733009FAE97 /* MachinesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesCoordinator.swift; sourceTree = "<group>"; };
+		81C470B128944733009FAE97 /* MachinesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesPresenter.swift; sourceTree = "<group>"; };
+		81C470B228944733009FAE97 /* MachinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesViewController.swift; sourceTree = "<group>"; };
+		81C470B328944733009FAE97 /* MachinesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesProtocols.swift; sourceTree = "<group>"; };
+		81C470B428944733009FAE97 /* MachinesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachinesRepository.swift; sourceTree = "<group>"; };
+		81C470BC2894495B009FAE97 /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
+		81C470BF28944E3C009FAE97 /* MachineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineViewCell.swift; sourceTree = "<group>"; };
 		E11187D5149F22F72C074349 /* Pods-NospressoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NospressoTests.release.xcconfig"; path = "Target Support Files/Pods-NospressoTests/Pods-NospressoTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB46361DCA50A5783B0FA17D /* Pods-NospressoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NospressoTests.debug.xcconfig"; path = "Target Support Files/Pods-NospressoTests/Pods-NospressoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +199,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		649BCB4828906B6100F743C8 /* Coffees */ = {
+			isa = PBXGroup;
+			children = (
+				649BCB572890849900F743C8 /* Views */,
+				649BCB4928906B8400F743C8 /* CoffeesCoordinator.swift */,
+				649BCB4A28906B8400F743C8 /* CoffeesPresenter.swift */,
+				649BCB4B28906B8400F743C8 /* CoffeesViewController.swift */,
+				649BCB4C28906B8400F743C8 /* CoffeesProtocols.swift */,
+				649BCB4D28906B8400F743C8 /* CoffeesRepository.swift */,
+			);
+			path = Coffees;
+			sourceTree = "<group>";
+		};
+		649BCB572890849900F743C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				649BCB582890850800F743C8 /* CoffeeTableViewCell.swift */,
+				8130C4C22891BFA900341D79 /* CoffeeTableViewHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8108691F2892F5CB008F2D69 /* CoffeeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				8108692E2893034C008F2D69 /* Views */,
+				810869202892F616008F2D69 /* CoffeeDetailsCoordinator.swift */,
+				810869212892F616008F2D69 /* CoffeeDetailsPresenter.swift */,
+				810869222892F616008F2D69 /* CoffeeDetailsViewController.swift */,
+				810869232892F616008F2D69 /* CoffeeDetailsProtocols.swift */,
+				810869242892F616008F2D69 /* CoffeeDetailsRepository.swift */,
+			);
+			path = CoffeeDetails;
+			sourceTree = "<group>";
+		};
+		8108692E2893034C008F2D69 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				810869302893036B008F2D69 /* CoffeeIntensity.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8130C4C42891C8AA00341D79 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				8130C4C52891C8CC00341D79 /* LoadingIndicatorViewController.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		815F27352889E1B90093D186 = {
 			isa = PBXGroup;
 			children = (
@@ -175,10 +278,14 @@
 				818511F9288B162C0075C5D3 /* R.generated.swift */,
 				8185122B288B2A0E0075C5D3 /* Home */,
 				815F27722889E5530093D186 /* ProductCategories */,
+				649BCB4828906B6100F743C8 /* Coffees */,
+				81C470AF28944718009FAE97 /* Machines */,
+				8108691F2892F5CB008F2D69 /* CoffeeDetails */,
 				8185122E288B2CDF0075C5D3 /* Favorites */,
 				815F27712889E4C30093D186 /* UnderTheCarpet */,
 				818511FB288B165A0075C5D3 /* Extensions */,
 				818511FE288B1B3C0075C5D3 /* Resources */,
+				8130C4C42891C8AA00341D79 /* Commons */,
 				81851239288B31AB0075C5D3 /* API */,
 				8185123C288B32A10075C5D3 /* Models */,
 				815F274A2889E1BB0093D186 /* Assets.xcassets */,
@@ -239,6 +346,10 @@
 			isa = PBXGroup;
 			children = (
 				818511FC288B16A70075C5D3 /* Typealiases.swift */,
+				649BCB552890710300F743C8 /* UIViewController+QoL.swift */,
+				8130C4BE2891A74300341D79 /* UIImageView+LoadImage.swift */,
+				8130C4C02891B7BD00341D79 /* Double+Money.swift */,
+				81086932289315B7008F2D69 /* String+AttributedString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +404,8 @@
 			isa = PBXGroup;
 			children = (
 				8185123A288B31C20075C5D3 /* API.swift */,
+				649BCB44289065A200F743C8 /* Endpoint.swift */,
+				649BCB46289065C600F743C8 /* APISupport.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -300,12 +413,33 @@
 		8185123C288B32A10075C5D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				649BCB4228905D3300F743C8 /* Capsule.swift */,
 				8185123D288B32B30075C5D3 /* Coffee.swift */,
-				9502AB2C288DF8FB001E940E /* Capsule.swift */,
-				9502AB2E288DFA40001E940E /* CapsuleCoffee.swift */,
-				9502AB30288DFC77001E940E /* Machine.swift */,
+				8108692C2892FB89008F2D69 /* CoffeeDetails.swift */,
+				81C470BC2894495B009FAE97 /* Machine.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		81C470AF28944718009FAE97 /* Machines */ = {
+			isa = PBXGroup;
+			children = (
+				81C470BE28944E32009FAE97 /* Views */,
+				81C470B028944733009FAE97 /* MachinesCoordinator.swift */,
+				81C470B128944733009FAE97 /* MachinesPresenter.swift */,
+				81C470B228944733009FAE97 /* MachinesViewController.swift */,
+				81C470B328944733009FAE97 /* MachinesProtocols.swift */,
+				81C470B428944733009FAE97 /* MachinesRepository.swift */,
+			);
+			path = Machines;
+			sourceTree = "<group>";
+		};
+		81C470BE28944E32009FAE97 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81C470BF28944E3C009FAE97 /* MachineViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A1194D77922F3A8738B88CBE /* Frameworks */ = {
@@ -601,22 +735,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810869312893036B008F2D69 /* CoffeeIntensity.swift in Sources */,
+				8108692D2892FB89008F2D69 /* CoffeeDetails.swift in Sources */,
+				649BCB5128906B8400F743C8 /* CoffeesViewController.swift in Sources */,
+				8130C4C32891BFA900341D79 /* CoffeeTableViewHeader.swift in Sources */,
+				649BCB47289065C600F743C8 /* APISupport.swift in Sources */,
+				810869272892F616008F2D69 /* CoffeeDetailsPresenter.swift in Sources */,
 				8185122D288B2A2F0075C5D3 /* HomeTabBarViewController.swift in Sources */,
 				815F277A2889E6700093D186 /* ProductCategories+Protocols.swift in Sources */,
-				9502AB31288DFC77001E940E /* Machine.swift in Sources */,
 				81851232288B2D7B0075C5D3 /* FavoritesPresenter.swift in Sources */,
-				9502AB2F288DFA40001E940E /* CapsuleCoffee.swift in Sources */,
 				815F27742889E6100093D186 /* ProductCategoriesPresenter.swift in Sources */,
+				81C470B728944733009FAE97 /* MachinesPresenter.swift in Sources */,
+				8130C4BF2891A74300341D79 /* UIImageView+LoadImage.swift in Sources */,
+				649BCB562890710300F743C8 /* UIViewController+QoL.swift in Sources */,
+				8130C4C62891C8CC00341D79 /* LoadingIndicatorViewController.swift in Sources */,
+				649BCB592890850800F743C8 /* CoffeeTableViewCell.swift in Sources */,
 				81851236288B2D960075C5D3 /* FavoritesCoordinator.swift in Sources */,
 				8185123E288B32B30075C5D3 /* Coffee.swift in Sources */,
+				649BCB5228906B8400F743C8 /* CoffeesProtocols.swift in Sources */,
+				810869282892F616008F2D69 /* CoffeeDetailsViewController.swift in Sources */,
 				818511FD288B16A70075C5D3 /* Typealiases.swift in Sources */,
+				649BCB4F28906B8400F743C8 /* CoffeesCoordinator.swift in Sources */,
+				8108692A2892F616008F2D69 /* CoffeeDetailsRepository.swift in Sources */,
 				818511FA288B162C0075C5D3 /* R.generated.swift in Sources */,
-				9502AB2D288DF8FB001E940E /* Capsule.swift in Sources */,
+				649BCB4328905D3300F743C8 /* Capsule.swift in Sources */,
 				81851238288B2DAB0075C5D3 /* Favorites+Protocols.swift in Sources */,
 				815F27462889E1B90093D186 /* ProductCategoriesViewController.swift in Sources */,
+				81C470C028944E3C009FAE97 /* MachineViewCell.swift in Sources */,
+				81086933289315B7008F2D69 /* String+AttributedString.swift in Sources */,
+				81C470B928944733009FAE97 /* MachinesProtocols.swift in Sources */,
+				649BCB5328906B8400F743C8 /* CoffeesRepository.swift in Sources */,
 				81851234288B2D8B0075C5D3 /* FavoritesRepository.swift in Sources */,
+				649BCB5028906B8400F743C8 /* CoffeesPresenter.swift in Sources */,
+				81C470BD2894495B009FAE97 /* Machine.swift in Sources */,
+				810869262892F616008F2D69 /* CoffeeDetailsCoordinator.swift in Sources */,
+				810869292892F616008F2D69 /* CoffeeDetailsProtocols.swift in Sources */,
+				8130C4C12891B7BD00341D79 /* Double+Money.swift in Sources */,
 				818511F7288B0BA00075C5D3 /* ProductCategoriesItemView.swift in Sources */,
+				81C470BA28944733009FAE97 /* MachinesRepository.swift in Sources */,
 				815F27782889E6350093D186 /* ProductCategoriesCoordinator.swift in Sources */,
+				649BCB45289065A200F743C8 /* Endpoint.swift in Sources */,
+				81C470B828944733009FAE97 /* MachinesViewController.swift in Sources */,
+				81C470B628944733009FAE97 /* MachinesCoordinator.swift in Sources */,
 				815F27422889E1B90093D186 /* AppDelegate.swift in Sources */,
 				815F27762889E6220093D186 /* ProductCategoriesRepository.swift in Sources */,
 				81851230288B2D420075C5D3 /* FavoritesViewController.swift in Sources */,
@@ -795,6 +955,7 @@
 				INFOPLIST_FILE = Nospresso/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -822,6 +983,7 @@
 				INFOPLIST_FILE = Nospresso/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

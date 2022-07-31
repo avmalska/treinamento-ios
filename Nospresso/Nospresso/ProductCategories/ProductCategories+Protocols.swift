@@ -28,10 +28,8 @@ protocol ProductCategoriesPresenterProtocol {
 
 // Presenter -> Repository
 protocol ProductCategoriesRepositoryInputProtocol {
-    func getCoffees()
 }
 
 // Repository -> Presenter
 protocol ProductCategoriesRepositoryOutputProtocol: AnyObject {
-    func getCoffeesSuccess()
 }

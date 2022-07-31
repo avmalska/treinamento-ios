@@ -683,20 +683,37 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 6 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 8 localization keys.
     struct localizable {
+      /// Value: 10 capsulas, 
+      static let tenCapsules = Rswift.StringResource(key: "tenCapsules", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Acessórios
       static let accessories = Rswift.StringResource(key: "accessories", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Cafés
       static let coffees = Rswift.StringResource(key: "coffees", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Cremosos, espumosos, hmm
       static let coffeesDescription = Rswift.StringResource(key: "coffees.description", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Intensidade: %d
+      static let intensity = Rswift.StringResource(key: "intensity", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Máquinas
       static let machines = Rswift.StringResource(key: "machines", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Pra completar a balaca
       static let accessoriesDescription = Rswift.StringResource(key: "accessories.description", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Sem elas não rola café
       static let machinesDescription = Rswift.StringResource(key: "machines.description", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+
+      /// Value: 10 capsulas, 
+      static func tenCapsules(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("tenCapsules", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "tenCapsules"
+        }
+
+        return NSLocalizedString("tenCapsules", bundle: bundle, comment: "")
+      }
 
       /// Value: Acessórios
       static func accessories(preferredLanguages: [String]? = nil) -> String {
@@ -735,6 +752,21 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("coffees.description", bundle: bundle, comment: "")
+      }
+
+      /// Value: Intensidade: %d
+      static func intensity(_ value1: Int, preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          let format = NSLocalizedString("intensity", bundle: hostingBundle, comment: "")
+          return String(format: format, locale: applicationLocale, value1)
+        }
+
+        guard let (locale, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "intensity"
+        }
+
+        let format = NSLocalizedString("intensity", bundle: bundle, comment: "")
+        return String(format: format, locale: locale, value1)
       }
 
       /// Value: Máquinas
