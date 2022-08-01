@@ -14,12 +14,13 @@ internal protocol RepositoriesViewProtocol: AnyObject {
 
 // ViewController -> Presenter
 internal protocol RepositoriesPresenterProtocol: UITableViewDelegate, UITableViewDataSource {
-    func viewDidLoad()
+    func viewDidLoad(language: String)
+    func searchLanguage(language: String)
 }
 
 // Presenter -> Repository
 internal protocol RepositoriesRepositoryInputProtocol {
-    func getRepositories()
+    func getRepositories(language: String)
 }
 
 // Repository -> Presenter

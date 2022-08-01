@@ -1214,13 +1214,4 @@
       "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10755477012510/Barista-2000x2000-noreflection.png"
     }
   ]
-  
-  "maquinas2":[
-      {
-        "id": 14,
-        "nome": "Barista",
-        "preco": 1099,
-        "dp": "Intuitiva e conectada, a Barista é a parceira perfeita para a sua máquina Nespresso. Faça de refrescantes Iced Coffees a Cappuccinos mais elaborados usando café, seus ingredientes favoritos e o App Nespresso.",
-        "url": "https://www.nespresso.com/ecom/medias/sys_master/public/10755477012510/Barista-2000x2000-noreflection.png"
-      }]
 }

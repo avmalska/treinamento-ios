@@ -12,7 +12,7 @@ class HomeTabBarViewController: UITabBarController {
     
     private var repositories: UIViewController {
         let navigation = UINavigationController()
-        navigation.tabBarItem = .init(title: "Repositories", image: UIImage(systemName: "cart"), tag: 0)
+        navigation.tabBarItem = .init(title: "Repositories", image: UIImage(systemName: "star"), tag: 0)
         
         let viewController = RepositoriesCoordinator.createModule(navigationController: navigation)
         

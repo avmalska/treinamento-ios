@@ -18,8 +18,12 @@ internal class RepositoriesPresenter: NSObject {
 
 // MARK: - Presenter Protocol
 extension RepositoriesPresenter: RepositoriesPresenterProtocol {
-    func viewDidLoad() {
-        repository.getRepositories()
+    func viewDidLoad(language: String) {
+        repository.getRepositories(language: language)
+    }
+    
+    func searchLanguage(language: String) {
+        repository.getRepositories(language: language)
     }
     
     
@@ -46,6 +50,16 @@ extension RepositoriesPresenter: RepositoriesRepositoryOutputProtocol {
 extension RepositoriesPresenter: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("touched")
+        if let cell = tableView.cellForRow(at: indexPath) as? RepositoryTableViewCell {
+            print(cell.ownerStackView.isFocused)
+            
+        }
+        let repositorie = repositories[indexPath.row]
+        print(repositorie)
     }
 }
 

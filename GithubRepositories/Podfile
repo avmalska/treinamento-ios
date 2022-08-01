@@ -8,6 +8,7 @@ target 'GithubRepositories' do
   # Pods for GithubRepositories
   pod 'SnapKit', '~> 5.6.0'
   pod 'R.swift'
+  pod 'Nuke'
 
   target 'GithubRepositoriesTests' do
     inherit! :search_paths

@@ -31,17 +31,11 @@ class ViewController: UIViewController {
         return imageView
     }()
     
-    lazy var gameCardImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "image 1")
-        return imageView
-    }()
-    
     lazy var gameCardsStackViewFirstRow: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
-        stackView.spacing = 23
-        stackView.distribution = .fillEqually
+        stackView.spacing = 15
+        stackView.distribution = .equalSpacing
         stackView.isUserInteractionEnabled = true
         return stackView
     }()
@@ -49,31 +43,16 @@ class ViewController: UIViewController {
     lazy var gameCardsStackViewSecondRow: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
-        stackView.spacing = 23
-        stackView.distribution = .fillEqually
+        stackView.spacing = 15
+        stackView.distribution = .equalSpacing
         stackView.isUserInteractionEnabled = true
         return stackView
     }()
-    
-    func createGameCard(imgNumber: String) -> UIImageView {
-        let gameCard = UIImageView()
-        let cardNumber = imgNumber
-        gameCard.image = UIImage(named: cardNumber)
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(gameCardOnClick(_:)))
-        gameCard.addGestureRecognizer(tapGesture)
-        gameCard.layer.setValue(cardNumber, forKey: "cardNumber")
-        gameCard.isUserInteractionEnabled = true
-        return gameCard
-    }
     
     @objc func restartOnClick() {
         print("restart click")
     }
     
-    @objc func gameCardOnClick(_ sender: UIGestureRecognizer) {
-        guard let cardNumber = sender.view?.layer.value(forKey: "cardNumber") as? String else { return }
-        print(cardNumber)
-    }
     
     private var jogoDaMemoria = JogoDaMemoria()
     
@@ -115,14 +94,16 @@ extension ViewController {
         view.addSubview(gameCardsStackViewFirstRow)
         view.addSubview(gameCardsStackViewSecondRow)
         
-        for imageNumber in jogoDaMemoria.gameCardsNumbersArray[...4] {
-            let arrangedCardView = createGameCard(imgNumber: imageNumber)
-            gameCardsStackViewFirstRow.addArrangedSubview(arrangedCardView)
+        for numb in jogoDaMemoria.gameCardsNumbersArray[...4] {
+            let gameCardView = GameCardView(id: numb)
+            gameCardView.delegate = self
+            gameCardsStackViewFirstRow.addArrangedSubview(gameCardView)
         }
         
-        for imageNumber in jogoDaMemoria.gameCardsNumbersArray[5...] {
-            let arrangedCardView = createGameCard(imgNumber: imageNumber)
-            gameCardsStackViewSecondRow.addArrangedSubview(arrangedCardView)
+        for numb in jogoDaMemoria.gameCardsNumbersArray[5...] {
+            let gameCardView = GameCardView(id: numb)
+            gameCardView.delegate = self
+            gameCardsStackViewSecondRow.addArrangedSubview(gameCardView)
         }
         
         reiniciarStackView.addArrangedSubview(reiniciarLabel)
@@ -131,8 +112,8 @@ extension ViewController {
     
     func buildConstraints() {
         reiniciarStackView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(24)
-            make.trailing.equalTo(view.safeAreaLayoutGuide).inset(22)
+            make.top.equalToSuperview().offset(30)
+            make.trailing.equalToSuperview().inset(40)
         }
         
         reiniciarImageView.snp.makeConstraints { make in
@@ -140,17 +121,22 @@ extension ViewController {
         }
         
         gameCardsStackViewFirstRow.snp.makeConstraints { make in
-            make.height.equalTo(110)
-            make.top.equalTo(reiniciarStackView.snp.bottom)
-            make.left.equalTo(view.safeAreaLayoutGuide.snp.left)
-            make.right.equalTo(view.safeAreaLayoutGuide.snp.right)
+            make.top.equalToSuperview().offset(101)
+            make.leading.equalToSuperview().offset(40)
+            make.trailing.equalToSuperview().inset(40)
         }
         
         gameCardsStackViewSecondRow.snp.makeConstraints { make in
-            make.height.equalTo(110)
-            make.top.equalTo(gameCardsStackViewFirstRow.snp.bottom)
-            make.left.equalTo(view.safeAreaLayoutGuide.snp.left)
-            make.right.equalTo(view.safeAreaLayoutGuide.snp.right)
+            make.top.equalTo(gameCardsStackViewFirstRow.snp.bottom).offset(15)
+            make.leading.equalToSuperview().offset(40)
+            make.trailing.equalToSuperview().inset(40)
         }
     }
+}
+
+extension ViewController: GameCardViewDelegateProtocol{
+    func touched(id: String) {
+        print("tou")
+    }
+    
 }

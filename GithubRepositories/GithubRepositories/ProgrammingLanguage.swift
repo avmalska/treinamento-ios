@@ -6,10 +6,24 @@
 //
 
 import Foundation
+import UIKit
 
 enum ProgrammingLanguage: String, CaseIterable {
     case swift,
          kotlin,
          objc = "obj-c",
          java
+    
+    var image: UIImage? {
+        switch self {
+        case .swift:
+            return Images.swift()
+        case .kotlin:
+            return Images.kotlin()
+        case .objc:
+            return Images.objc()
+        case .java:
+            return Images.java()
+        }
+    }
 }
