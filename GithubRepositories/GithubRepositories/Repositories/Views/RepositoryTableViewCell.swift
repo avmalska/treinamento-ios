@@ -36,8 +36,13 @@ class RepositoryTableViewCell: UITableViewCell {
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 8, leading: 10, bottom: 10, trailing: 8)
         
+        stackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(touched)))
         return stackView
     }()
+    
+    @objc func touched() {
+        print("???")
+    }
     
     lazy var repositoryOwnerImageView: UIImageView = {
         let imageView = UIImageView()

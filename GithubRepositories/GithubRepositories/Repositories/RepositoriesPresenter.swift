@@ -53,13 +53,8 @@ extension RepositoriesPresenter: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("touched")
-        if let cell = tableView.cellForRow(at: indexPath) as? RepositoryTableViewCell {
-            print(cell.ownerStackView.isFocused)
-            
-        }
         let repositorie = repositories[indexPath.row]
-        print(repositorie)
+        coordinator.openRepositoryDetails(using: repositorie)
     }
 }
 

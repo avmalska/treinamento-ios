@@ -3,7 +3,7 @@ import UIKit
 
 // Presenter -> Coordinator
 internal protocol RepositoriesCoordinatorProtocol {
-
+    func openRepositoryDetails(using repository: Repository)
 }
 
 // Presenter -> ViewController

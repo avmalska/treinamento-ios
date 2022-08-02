@@ -16,7 +16,17 @@ protocol ProgrammingLanguageItemViewDelegateProtocol {
 class ProgrammingLanguageItemView: UIView {
     
     let programmingLanguage: ProgrammingLanguage
-    var isSelected: Bool?
+    
+    let selectedColor = Colors.navbar()
+    let unselectedColor = UIColor(white: 0.2, alpha: 0.2)
+    
+    var isSelected: Bool {
+        didSet {
+            if isSelected != oldValue {
+                update()
+            }
+        }
+    }
     
     var delegate: ProgrammingLanguageItemViewDelegateProtocol?
     
@@ -64,11 +74,13 @@ extension ProgrammingLanguageItemView {
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(touched)))
     }
     
-    func update() {
-        if isSelected ?? false {
-            layer.borderColor = UIColor.blue.cgColor
+    private func update() {
+        if isSelected {
+            layer.borderColor = selectedColor!.cgColor
+            languageNameLabel.textColor = selectedColor
         } else {
-            layer.borderColor = UIColor.black.cgColor
+            layer.borderColor = unselectedColor.cgColor
+            languageNameLabel.textColor = unselectedColor
         }
     }
     
@@ -85,6 +97,7 @@ extension ProgrammingLanguageItemView {
     func buildConstraints() {
         snp.makeConstraints { make in
             make.width.equalTo(100)
+            make.height.equalTo(35)
         }
         
         languageStackView.snp.makeConstraints { make in

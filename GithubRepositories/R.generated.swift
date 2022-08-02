@@ -105,12 +105,14 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 2 colors.
+  /// This `R.color` struct is generated, and contains static references to 3 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
     /// Color `discreto`.
     static let discreto = Rswift.ColorResource(bundle: R.hostingBundle, name: "discreto")
+    /// Color `navbar`.
+    static let navbar = Rswift.ColorResource(bundle: R.hostingBundle, name: "navbar")
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
@@ -130,6 +132,15 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "navbar", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func navbar(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.navbar, compatibleWith: traitCollection)
+    }
+    #endif
+
     #if os(watchOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
@@ -143,6 +154,14 @@ struct R: Rswift.Validatable {
     @available(watchOSApplicationExtension 4.0, *)
     static func discreto(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.discreto.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "navbar", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func navbar(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.navbar.name)
     }
     #endif
 

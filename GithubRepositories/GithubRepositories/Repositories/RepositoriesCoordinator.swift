@@ -11,6 +11,11 @@ internal class RepositoriesCoordinator {
 }
 
 extension RepositoriesCoordinator: RepositoriesCoordinatorProtocol {
+    func openRepositoryDetails(using repositoryDetails: Repository) {
+        let viewController = RepositoryDetailsCoordinator.createModule(navigationController: navigationController, repositoryDetails: repositoryDetails)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     
 }
 

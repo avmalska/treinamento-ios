@@ -3,7 +3,7 @@ import SnapKit
 
 internal class RepositoriesViewController: UIViewController {
     
-    var selectedLanguage: ProgrammingLanguage = .swift
+    let inicialSelectedLanguage: ProgrammingLanguage = .swift
     
     lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -21,11 +21,8 @@ internal class RepositoriesViewController: UIViewController {
         return scrollView
     }()
     
-    lazy var languagesStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .horizontal
-        stackView.spacing = 18
-//        stackView.distribution = .fillProportionally
+    lazy var programmingLanguagesStackView: ProgrammingLanguagesStackView = {
+        let stackView = ProgrammingLanguagesStackView(selectedLanguage: inicialSelectedLanguage)
         return stackView
     }()
     
@@ -50,8 +47,7 @@ internal class RepositoriesViewController: UIViewController {
         buildViews()
         buildConstraints()
         
-        presenter.viewDidLoad(language: selectedLanguage.rawValue)
-        update()
+        presenter.viewDidLoad(language: inicialSelectedLanguage.rawValue)
     }
 
 }
@@ -72,8 +68,25 @@ extension RepositoriesViewController: RepositoriesViewProtocol {
 extension RepositoriesViewController {
     func configViews() {
         title = Localizable.repositories()
-        view.backgroundColor = .white
         
+        let barAppearance = UIBarAppearance()
+        barAppearance.backgroundColor = Colors.navbar()
+
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+
+        let appearance = UINavigationBarAppearance(barAppearance: barAppearance)
+        appearance.titleTextAttributes = textAttributes
+        appearance.largeTitleTextAttributes = textAttributes
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = Colors.navbar()
+        navigationController?.navigationBar.tintColor = Colors.navbar()
+        
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        
+        
+        view.backgroundColor = .white
         tableView.delegate = presenter
         tableView.dataSource = presenter
         tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: RepositoryTableViewCell.reuseIentifier.identifier)
@@ -83,17 +96,13 @@ extension RepositoriesViewController {
         view.addSubview(tableView)
         view.addSubview(languagesScrollView)
         
-        languagesScrollView.addSubview(languagesStackView)
-        
-        for language in ProgrammingLanguage.allCases {
-            let languageView = ProgrammingLanguageItemView(programmingLanguage: language)
-            languageView.delegate = self
-            languagesStackView.addArrangedSubview(languageView)
-        }
+        programmingLanguagesStackView.delegate = self
+        languagesScrollView.addSubview(programmingLanguagesStackView)
         
     }
     
     func buildConstraints() {
+        
         languagesScrollView.snp.makeConstraints { make in
             make.height.equalTo(66)
             make.top.equalTo(view.safeAreaLayoutGuide)
@@ -102,40 +111,25 @@ extension RepositoriesViewController {
             make.bottom.equalTo(tableView.snp.top)
         }
         
-        languagesStackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+        programmingLanguagesStackView.snp.makeConstraints { make in
+            make.bottom.trailing.leading.equalToSuperview()
             make.height.equalTo(35)
-//            make.width.equalToSuperview()
+            make.top.equalToSuperview().offset(15)
         }
         
         tableView.snp.makeConstraints { make in
             make.top.equalTo(languagesScrollView.snp.bottom)
+//            make.edges.equalTo(view.safeAreaLayoutGuide)
             make.trailing.leading.bottom.equalTo(view.safeAreaLayoutGuide)
         }
     }
     
-    func update() {
-        for language in languagesStackView.arrangedSubviews {
-            if let subLanguage = language as? ProgrammingLanguageItemView {
-                if selectedLanguage == subLanguage.programmingLanguage {
-                    subLanguage.isSelected = true
-                    subLanguage.update()
-                } else {
-                    subLanguage.isSelected = false
-                    subLanguage.update()
-                }
-            }
-        }
-    }
 }
 
-extension RepositoriesViewController: ProgrammingLanguageItemViewDelegateProtocol {
+
+extension RepositoriesViewController: ProgrammingLanguagesStackViewDelegateProtocol {
     func touched(language: ProgrammingLanguage) {
-        if selectedLanguage != language {
-            selectedLanguage = language
-            presenter.searchLanguage(language: language.rawValue)
-            update()
-        }
+        presenter.searchLanguage(language: language.rawValue)
     }
     
     
