@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  CGCards
+
+  Created by Juan Andrey Valverde Malska on 09/08/22.
+  
+*/
+
+"sets" = "Aventuras e Expansões";
+"types" = "Tipos de Cartas";
+"rarities" = "Raridades";
+"classes" = "Classes";
+"spellSchools" = "Tipos de Feitiços";
+

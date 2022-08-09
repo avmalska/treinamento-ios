@@ -1,0 +1,6 @@
+framework module Pods_CGCards {
+  umbrella header "Pods-CGCards-umbrella.h"
+
+  export *
+  module * { export * }
+}
