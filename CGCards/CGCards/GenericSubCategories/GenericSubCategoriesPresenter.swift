@@ -59,5 +59,12 @@ extension GenericSubCategoriesPresenter: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let filterName = subCategoryType.rawValue
+        let filterDetail = subCategories[indexPath.row].slug
+        let filterTitle = subCategories[indexPath.row].name
+        coordinator.openCardSearch(filterName: filterName, filterDetail: filterDetail, filterTitle: filterTitle)
+    }
     
 }
+

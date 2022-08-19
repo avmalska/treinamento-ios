@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "hearthstone_adventure.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

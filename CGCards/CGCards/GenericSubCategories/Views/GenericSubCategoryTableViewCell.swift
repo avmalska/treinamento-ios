@@ -15,7 +15,7 @@ class GenericSubCategoryTableViewCell: UITableViewCell {
     
     lazy var nameLabel: UILabel = {
         let label = UILabel()
-        
+        label.font = .boldSystemFont(ofSize: 25)
         return label
     }()
     
@@ -38,7 +38,7 @@ class GenericSubCategoryTableViewCell: UITableViewCell {
 
 extension GenericSubCategoryTableViewCell {
     func configViews() {
-        backgroundColor = .white
+        backgroundColor = Colors.fundo()
     }
     
     func buildViews() {

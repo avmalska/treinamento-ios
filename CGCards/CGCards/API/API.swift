@@ -15,6 +15,9 @@ class API {
     
     func request<T: Decodable>(
         endpoint: Endpoint,
+        pageNumber: Int? = 1,
+        filterName: String? = nil,
+        filterDetail: String? = nil,
         method: HTTPMethod = .get,
         success: @escaping SuccessResult<T>,
         failure: @escaping FailureResult
@@ -30,7 +33,15 @@ class API {
             url.append(name, value: value)
         }
         
-        print(url)
+        if let pageNumber = pageNumber, let filterName = filterName, let filterDetail = filterDetail {
+            EndpointQuerys.filters(
+                pageNumber: pageNumber,
+                filterName: filterName,
+                filterDetail: filterDetail)
+            .query.forEach { name, value in
+                url.append(name, value: value)
+            }
+        }
         
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
@@ -51,7 +62,6 @@ class API {
             do {
                 let decodedData = try decoder.decode(T.self, from: data)
                 success(decodedData)
-                print(decodedData)
             } catch {
                 failure(.decodeFailed(error: error, textData: String(data: data, encoding: .utf8)))
             }

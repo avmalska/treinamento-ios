@@ -3,7 +3,7 @@ import UIKit
 
 // Presenter -> Coordinator
 internal protocol GenericSubCategoriesCoordinatorProtocol {
-
+    func openCardSearch(filterName: String, filterDetail: String, filterTitle: String)
 }
 
 // Presenter -> ViewController

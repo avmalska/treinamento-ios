@@ -16,6 +16,11 @@ extension CategoriesCoordinator: CategoriesCoordinatorProtocol {
         navigationController?.pushViewController(viewController, animated: true)
     }
     
+    func openClassesCategories(classesCategories: [ClassCategory], subCategoryType: CategoryItemViewType) {
+        let viewController = ClassesCategoriesCoordinator.createModule(navigationController: navigationController, classesCategories: classesCategories, subCategoryType: subCategoryType)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
 }
 
 extension CategoriesCoordinator {

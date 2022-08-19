@@ -11,6 +11,11 @@ internal class GenericSubCategoriesCoordinator {
 }
 
 extension GenericSubCategoriesCoordinator: GenericSubCategoriesCoordinatorProtocol {
+    func openCardSearch(filterName: String, filterDetail: String, filterTitle: String) {
+        let viewController = CardsCoordinator.createModule(navigationController: navigationController, filterName: filterName, filterDetail: filterDetail, filterTitle: filterTitle)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     
 }
 

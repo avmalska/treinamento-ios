@@ -3,11 +3,13 @@ import Foundation
 // Presenter -> Coordinator
 internal protocol CategoriesCoordinatorProtocol {
     func openGenericSubcategory(genericSubCategories: [GenericSubCategory], subCategoryType: CategoryItemViewType)
+    func openClassesCategories(classesCategories: [ClassCategory], subCategoryType: CategoryItemViewType)
 }
 
 // Presenter -> ViewController
 internal protocol CategoriesViewProtocol: AnyObject {
-
+    func showLoadingIndicator()
+    func hideLoadingIndicator()
 }
 
 // ViewController -> Presenter

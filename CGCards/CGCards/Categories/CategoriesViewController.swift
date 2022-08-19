@@ -1,6 +1,7 @@
 import UIKit
 
-internal class CategoriesViewController: UIViewController {
+internal class CategoriesViewController: UIViewController, LoadingIndicatorViewType {
+    var loadingIndicatorViewController: UIViewController?
 
     private let presenter: CategoriesPresenterProtocol
     
@@ -65,7 +66,7 @@ internal class CategoriesViewController: UIViewController {
 
 extension CategoriesViewController {
     func configViews() {
-        view.backgroundColor = .yellow
+        view.backgroundColor = Colors.fundo()
     }
     
     func buildViews() {

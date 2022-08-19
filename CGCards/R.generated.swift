@@ -105,10 +105,18 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 1 colors.
+  /// This `R.color` struct is generated, and contains static references to 5 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
+    /// Color `butaofundo`.
+    static let butaofundo = Rswift.ColorResource(bundle: R.hostingBundle, name: "butaofundo")
+    /// Color `cinza-sobreposicao`.
+    static let cinzaSobreposicao = Rswift.ColorResource(bundle: R.hostingBundle, name: "cinza-sobreposicao")
+    /// Color `fundo`.
+    static let fundo = Rswift.ColorResource(bundle: R.hostingBundle, name: "fundo")
+    /// Color `preto-sobreposicao`.
+    static let pretoSobreposicao = Rswift.ColorResource(bundle: R.hostingBundle, name: "preto-sobreposicao")
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
@@ -119,11 +127,193 @@ struct R: Rswift.Validatable {
     }
     #endif
 
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "butaofundo", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func butaofundo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.butaofundo, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "cinza-sobreposicao", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func cinzaSobreposicao(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.cinzaSobreposicao, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "fundo", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func fundo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.fundo, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "preto-sobreposicao", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func pretoSobreposicao(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.pretoSobreposicao, compatibleWith: traitCollection)
+    }
+    #endif
+
     #if os(watchOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
     static func accentColor(_: Void = ()) -> UIKit.UIColor? {
       return UIKit.UIColor(named: R.color.accentColor.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "butaofundo", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func butaofundo(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.butaofundo.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "cinza-sobreposicao", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func cinzaSobreposicao(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.cinzaSobreposicao.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "fundo", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func fundo(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.fundo.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "preto-sobreposicao", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func pretoSobreposicao(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.pretoSobreposicao.name)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
+  /// This `R.image` struct is generated, and contains static references to 12 images.
+  struct image {
+    /// Image `builder`.
+    static let builder = Rswift.ImageResource(bundle: R.hostingBundle, name: "builder")
+    /// Image `card_back`.
+    static let card_back = Rswift.ImageResource(bundle: R.hostingBundle, name: "card_back")
+    /// Image `card_template`.
+    static let card_template = Rswift.ImageResource(bundle: R.hostingBundle, name: "card_template")
+    /// Image `default_crop`.
+    static let default_crop = Rswift.ImageResource(bundle: R.hostingBundle, name: "default_crop")
+    /// Image `hearhstone_cards`.
+    static let hearhstone_cards = Rswift.ImageResource(bundle: R.hostingBundle, name: "hearhstone_cards")
+    /// Image `hearhstone_class`.
+    static let hearhstone_class = Rswift.ImageResource(bundle: R.hostingBundle, name: "hearhstone_class")
+    /// Image `hearhstone_spells`.
+    static let hearhstone_spells = Rswift.ImageResource(bundle: R.hostingBundle, name: "hearhstone_spells")
+    /// Image `hearthstone_adventure`.
+    static let hearthstone_adventure = Rswift.ImageResource(bundle: R.hostingBundle, name: "hearthstone_adventure")
+    /// Image `hearthstone_raritiy`.
+    static let hearthstone_raritiy = Rswift.ImageResource(bundle: R.hostingBundle, name: "hearthstone_raritiy")
+    /// Image `heathstone_logo`.
+    static let heathstone_logo = Rswift.ImageResource(bundle: R.hostingBundle, name: "heathstone_logo")
+    /// Image `keeper`.
+    static let keeper = Rswift.ImageResource(bundle: R.hostingBundle, name: "keeper")
+    /// Image `panda`.
+    static let panda = Rswift.ImageResource(bundle: R.hostingBundle, name: "panda")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "builder", bundle: ..., traitCollection: ...)`
+    static func builder(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.builder, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "card_back", bundle: ..., traitCollection: ...)`
+    static func card_back(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.card_back, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "card_template", bundle: ..., traitCollection: ...)`
+    static func card_template(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.card_template, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "default_crop", bundle: ..., traitCollection: ...)`
+    static func default_crop(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.default_crop, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hearhstone_cards", bundle: ..., traitCollection: ...)`
+    static func hearhstone_cards(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hearhstone_cards, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hearhstone_class", bundle: ..., traitCollection: ...)`
+    static func hearhstone_class(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hearhstone_class, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hearhstone_spells", bundle: ..., traitCollection: ...)`
+    static func hearhstone_spells(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hearhstone_spells, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hearthstone_adventure", bundle: ..., traitCollection: ...)`
+    static func hearthstone_adventure(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hearthstone_adventure, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "hearthstone_raritiy", bundle: ..., traitCollection: ...)`
+    static func hearthstone_raritiy(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.hearthstone_raritiy, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "heathstone_logo", bundle: ..., traitCollection: ...)`
+    static func heathstone_logo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.heathstone_logo, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "keeper", bundle: ..., traitCollection: ...)`
+    static func keeper(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.keeper, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "panda", bundle: ..., traitCollection: ...)`
+    static func panda(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.panda, compatibleWith: traitCollection)
     }
     #endif
 
@@ -162,30 +352,34 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 5 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 7 localization keys.
     struct localizable {
-      /// Value: Aventuras e Expansões
-      static let sets = Rswift.StringResource(key: "sets", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Card Types
+      static let types = Rswift.StringResource(key: "types", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Classes
       static let classes = Rswift.StringResource(key: "classes", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Raridades
+      /// Value: Create a Custom Card
+      static let createCstomCard = Rswift.StringResource(key: "createCstomCard", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Expansions
+      static let sets = Rswift.StringResource(key: "sets", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: Rarities
       static let rarities = Rswift.StringResource(key: "rarities", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Tipos de Cartas
-      static let types = Rswift.StringResource(key: "types", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Tipos de Feitiços
+      /// Value: Spell Schools
       static let spellSchools = Rswift.StringResource(key: "spellSchools", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: View Custom Cards
+      static let viewCustomCards = Rswift.StringResource(key: "viewCustomCards", tableName: "Localizable", bundle: R.hostingBundle, locales: [], comment: nil)
 
-      /// Value: Aventuras e Expansões
-      static func sets(preferredLanguages: [String]? = nil) -> String {
+      /// Value: Card Types
+      static func types(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("sets", bundle: hostingBundle, comment: "")
+          return NSLocalizedString("types", bundle: hostingBundle, comment: "")
         }
 
         guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
-          return "sets"
+          return "types"
         }
 
-        return NSLocalizedString("sets", bundle: bundle, comment: "")
+        return NSLocalizedString("types", bundle: bundle, comment: "")
       }
 
       /// Value: Classes
@@ -201,7 +395,33 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("classes", bundle: bundle, comment: "")
       }
 
-      /// Value: Raridades
+      /// Value: Create a Custom Card
+      static func createCstomCard(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("createCstomCard", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "createCstomCard"
+        }
+
+        return NSLocalizedString("createCstomCard", bundle: bundle, comment: "")
+      }
+
+      /// Value: Expansions
+      static func sets(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("sets", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "sets"
+        }
+
+        return NSLocalizedString("sets", bundle: bundle, comment: "")
+      }
+
+      /// Value: Rarities
       static func rarities(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("rarities", bundle: hostingBundle, comment: "")
@@ -214,20 +434,7 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("rarities", bundle: bundle, comment: "")
       }
 
-      /// Value: Tipos de Cartas
-      static func types(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("types", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
-          return "types"
-        }
-
-        return NSLocalizedString("types", bundle: bundle, comment: "")
-      }
-
-      /// Value: Tipos de Feitiços
+      /// Value: Spell Schools
       static func spellSchools(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("spellSchools", bundle: hostingBundle, comment: "")
@@ -238,6 +445,19 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("spellSchools", bundle: bundle, comment: "")
+      }
+
+      /// Value: View Custom Cards
+      static func viewCustomCards(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("viewCustomCards", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "viewCustomCards"
+        }
+
+        return NSLocalizedString("viewCustomCards", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}

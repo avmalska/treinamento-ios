@@ -12,9 +12,20 @@ class HomeTabBarViewController: UITabBarController {
 
     private var categories: UIViewController {
         let navigation = UINavigationController()
-        navigation.tabBarItem = .init(title: "Categorias", image: UIImage(systemName: "star"), tag: 0)
+        navigation.tabBarItem = .init(title: "Categories", image: UIImage(systemName: "star"), tag: 0)
         
         let viewController = CategoriesCoordinator.createModule(navigationController: navigation)
+        
+        navigation.viewControllers = [viewController]
+        
+        return navigation
+    }
+    
+    private var customCards: UIViewController {
+        let navigation = UINavigationController()
+        navigation.tabBarItem = .init(title: "Custom Cards", image: UIImage(systemName: "heart"), tag: 0)
+        
+        let viewController = CustomCardsCoordinator.createModule(navigationController: navigation)
         
         navigation.viewControllers = [viewController]
         
@@ -24,6 +35,6 @@ class HomeTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewControllers = [categories]
+        viewControllers = [categories, customCards]
     }
 }

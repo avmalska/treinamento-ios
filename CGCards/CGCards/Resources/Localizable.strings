@@ -6,9 +6,10 @@
   
 */
 
-"sets" = "Aventuras e Expansões";
-"types" = "Tipos de Cartas";
-"rarities" = "Raridades";
+"sets" = "Expansions";
+"types" = "Card Types";
+"rarities" = "Rarities";
 "classes" = "Classes";
-"spellSchools" = "Tipos de Feitiços";
-
+"spellSchools" = "Spell Schools";
+"createCstomCard" = "Create a Custom Card";
+"viewCustomCards" = "View Custom Cards";

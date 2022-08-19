@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>CGCards save photos to library use</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>CGCCards photo library use</string>
+	<key>NSCameraUsageDescription</key>
+	<string>CGCards camera use</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

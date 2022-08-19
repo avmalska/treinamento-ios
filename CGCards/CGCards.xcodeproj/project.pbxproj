@@ -38,6 +38,39 @@
 		958202EE28A29E160095F87A /* GenericSubCategoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958202E828A29E160095F87A /* GenericSubCategoriesRepository.swift */; };
 		958202F128A29E750095F87A /* GenericSubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958202F028A29E750095F87A /* GenericSubCategory.swift */; };
 		958202F428A2F4270095F87A /* GenericSubCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958202F328A2F4270095F87A /* GenericSubCategoryTableViewCell.swift */; };
+		95DD611128A5396E003C3C15 /* CardSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD611028A5396E003C3C15 /* CardSearch.swift */; };
+		95DD611928A548EA003C3C15 /* CardsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD611328A548EA003C3C15 /* CardsCoordinator.swift */; };
+		95DD611A28A548EA003C3C15 /* CardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD611428A548EA003C3C15 /* CardsPresenter.swift */; };
+		95DD611B28A548EA003C3C15 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD611528A548EA003C3C15 /* CardsViewController.swift */; };
+		95DD611C28A548EA003C3C15 /* CardsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD611628A548EA003C3C15 /* CardsProtocols.swift */; };
+		95DD611D28A548EA003C3C15 /* CardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD611728A548EA003C3C15 /* CardsRepository.swift */; };
+		95DD612128A838FE003C3C15 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD612028A838FE003C3C15 /* CardTableViewCell.swift */; };
+		95DD612328A8688D003C3C15 /* UIImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD612228A8688D003C3C15 /* UIImageView+LoadImage.swift */; };
+		95DD612B28A884F3003C3C15 /* CardDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD612528A884F3003C3C15 /* CardDetailsCoordinator.swift */; };
+		95DD612C28A884F3003C3C15 /* CardDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD612628A884F3003C3C15 /* CardDetailsPresenter.swift */; };
+		95DD612D28A884F3003C3C15 /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD612728A884F3003C3C15 /* CardDetailsViewController.swift */; };
+		95DD612E28A884F3003C3C15 /* CardDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD612828A884F3003C3C15 /* CardDetailsProtocols.swift */; };
+		95DD612F28A884F3003C3C15 /* CardDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD612928A884F3003C3C15 /* CardDetailsRepository.swift */; };
+		95DD613828A8B6F3003C3C15 /* CustomCardsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD613228A8B6F3003C3C15 /* CustomCardsCoordinator.swift */; };
+		95DD613928A8B6F3003C3C15 /* CustomCardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD613328A8B6F3003C3C15 /* CustomCardsPresenter.swift */; };
+		95DD613A28A8B6F3003C3C15 /* CustomCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD613428A8B6F3003C3C15 /* CustomCardsViewController.swift */; };
+		95DD613B28A8B6F3003C3C15 /* CustomCardsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD613528A8B6F3003C3C15 /* CustomCardsProtocols.swift */; };
+		95DD613C28A8B6F3003C3C15 /* CustomCardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD613628A8B6F3003C3C15 /* CustomCardsRepository.swift */; };
+		95DD613F28A8B8D2003C3C15 /* UIViewController+QoL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD613E28A8B8D2003C3C15 /* UIViewController+QoL.swift */; };
+		95DD614228A8B905003C3C15 /* LoadingIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD614128A8B905003C3C15 /* LoadingIndicatorViewController.swift */; };
+		95DD614528A8BE84003C3C15 /* CustomCardsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD614428A8BE84003C3C15 /* CustomCardsItemView.swift */; };
+		95DD614F28A9E404003C3C15 /* CreateCustomCardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD614928A9E404003C3C15 /* CreateCustomCardCoordinator.swift */; };
+		95DD615028A9E404003C3C15 /* CreateCustomCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD614A28A9E404003C3C15 /* CreateCustomCardPresenter.swift */; };
+		95DD615128A9E404003C3C15 /* CreateCustomCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD614B28A9E404003C3C15 /* CreateCustomCardViewController.swift */; };
+		95DD615228A9E404003C3C15 /* CreateCustomCardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD614C28A9E404003C3C15 /* CreateCustomCardProtocols.swift */; };
+		95DD615328A9E404003C3C15 /* CreateCustomCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD614D28A9E404003C3C15 /* CreateCustomCardRepository.swift */; };
+		95DD615C28AAE810003C3C15 /* ClassesCategoriesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD615628AAE810003C3C15 /* ClassesCategoriesCoordinator.swift */; };
+		95DD615D28AAE810003C3C15 /* ClassesCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD615728AAE810003C3C15 /* ClassesCategoriesPresenter.swift */; };
+		95DD615E28AAE810003C3C15 /* ClassesCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD615828AAE810003C3C15 /* ClassesCategoriesViewController.swift */; };
+		95DD615F28AAE810003C3C15 /* ClassesCategoriesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD615928AAE810003C3C15 /* ClassesCategoriesProtocols.swift */; };
+		95DD616028AAE810003C3C15 /* ClassesCategoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD615A28AAE810003C3C15 /* ClassesCategoriesRepository.swift */; };
+		95DD616328AAFF7C003C3C15 /* ClassCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD616228AAFF7C003C3C15 /* ClassCategory.swift */; };
+		95DD616628ADBF61003C3C15 /* ClassCategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD616528ADBF61003C3C15 /* ClassCategoryViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +128,39 @@
 		958202E828A29E160095F87A /* GenericSubCategoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSubCategoriesRepository.swift; sourceTree = "<group>"; };
 		958202F028A29E750095F87A /* GenericSubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSubCategory.swift; sourceTree = "<group>"; };
 		958202F328A2F4270095F87A /* GenericSubCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSubCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		95DD611028A5396E003C3C15 /* CardSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearch.swift; sourceTree = "<group>"; };
+		95DD611328A548EA003C3C15 /* CardsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCoordinator.swift; sourceTree = "<group>"; };
+		95DD611428A548EA003C3C15 /* CardsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPresenter.swift; sourceTree = "<group>"; };
+		95DD611528A548EA003C3C15 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		95DD611628A548EA003C3C15 /* CardsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsProtocols.swift; sourceTree = "<group>"; };
+		95DD611728A548EA003C3C15 /* CardsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRepository.swift; sourceTree = "<group>"; };
+		95DD612028A838FE003C3C15 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		95DD612228A8688D003C3C15 /* UIImageView+LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadImage.swift"; sourceTree = "<group>"; };
+		95DD612528A884F3003C3C15 /* CardDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsCoordinator.swift; sourceTree = "<group>"; };
+		95DD612628A884F3003C3C15 /* CardDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsPresenter.swift; sourceTree = "<group>"; };
+		95DD612728A884F3003C3C15 /* CardDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsViewController.swift; sourceTree = "<group>"; };
+		95DD612828A884F3003C3C15 /* CardDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsProtocols.swift; sourceTree = "<group>"; };
+		95DD612928A884F3003C3C15 /* CardDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsRepository.swift; sourceTree = "<group>"; };
+		95DD613228A8B6F3003C3C15 /* CustomCardsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardsCoordinator.swift; sourceTree = "<group>"; };
+		95DD613328A8B6F3003C3C15 /* CustomCardsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardsPresenter.swift; sourceTree = "<group>"; };
+		95DD613428A8B6F3003C3C15 /* CustomCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardsViewController.swift; sourceTree = "<group>"; };
+		95DD613528A8B6F3003C3C15 /* CustomCardsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardsProtocols.swift; sourceTree = "<group>"; };
+		95DD613628A8B6F3003C3C15 /* CustomCardsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardsRepository.swift; sourceTree = "<group>"; };
+		95DD613E28A8B8D2003C3C15 /* UIViewController+QoL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+QoL.swift"; sourceTree = "<group>"; };
+		95DD614128A8B905003C3C15 /* LoadingIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewController.swift; sourceTree = "<group>"; };
+		95DD614428A8BE84003C3C15 /* CustomCardsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardsItemView.swift; sourceTree = "<group>"; };
+		95DD614928A9E404003C3C15 /* CreateCustomCardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomCardCoordinator.swift; sourceTree = "<group>"; };
+		95DD614A28A9E404003C3C15 /* CreateCustomCardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomCardPresenter.swift; sourceTree = "<group>"; };
+		95DD614B28A9E404003C3C15 /* CreateCustomCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomCardViewController.swift; sourceTree = "<group>"; };
+		95DD614C28A9E404003C3C15 /* CreateCustomCardProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomCardProtocols.swift; sourceTree = "<group>"; };
+		95DD614D28A9E404003C3C15 /* CreateCustomCardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomCardRepository.swift; sourceTree = "<group>"; };
+		95DD615628AAE810003C3C15 /* ClassesCategoriesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesCategoriesCoordinator.swift; sourceTree = "<group>"; };
+		95DD615728AAE810003C3C15 /* ClassesCategoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesCategoriesPresenter.swift; sourceTree = "<group>"; };
+		95DD615828AAE810003C3C15 /* ClassesCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesCategoriesViewController.swift; sourceTree = "<group>"; };
+		95DD615928AAE810003C3C15 /* ClassesCategoriesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesCategoriesProtocols.swift; sourceTree = "<group>"; };
+		95DD615A28AAE810003C3C15 /* ClassesCategoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesCategoriesRepository.swift; sourceTree = "<group>"; };
+		95DD616228AAFF7C003C3C15 /* ClassCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCategory.swift; sourceTree = "<group>"; };
+		95DD616528ADBF61003C3C15 /* ClassCategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCategoryViewCell.swift; sourceTree = "<group>"; };
 		9F519F2CA8DBCBC99C2A8228 /* Pods-CGCards-CGCardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGCards-CGCardsUITests.debug.xcconfig"; path = "Target Support Files/Pods-CGCards-CGCardsUITests/Pods-CGCards-CGCardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF9280683A11740A8D1D959E /* Pods-CGCards-CGCardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGCards-CGCardsUITests.release.xcconfig"; path = "Target Support Files/Pods-CGCards-CGCardsUITests/Pods-CGCards-CGCardsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B99B7FD724A78C6AA2C43D7F /* Pods-CGCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGCards.release.xcconfig"; path = "Target Support Files/Pods-CGCards/Pods-CGCards.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,13 +232,19 @@
 			children = (
 				958202DB28A26DD60095F87A /* R.generated.swift */,
 				958202B72899AF7C0095F87A /* Home */,
+				95DD613128A8B6B0003C3C15 /* CustomCards */,
+				95DD614628A9E3CC003C3C15 /* CreateCustomCard */,
 				958202CA28A2564F0095F87A /* Categories */,
 				958202E328A29DF50095F87A /* GenericSubCategories */,
+				95DD615528AAE7FA003C3C15 /* ClassesCategories */,
+				95DD611228A54873003C3C15 /* Cards */,
+				95DD612428A884DF003C3C15 /* CardDetails */,
 				958202BB289B04630095F87A /* API */,
 				958202BF28A240210095F87A /* Model */,
-				958202BA2899AFD40095F87A /* UnderTheCarpet */,
+				95DD614028A8B8F6003C3C15 /* Commons */,
 				958202E028A26F140095F87A /* Extensions */,
 				958202DD28A26E060095F87A /* Resources */,
+				958202BA2899AFD40095F87A /* UnderTheCarpet */,
 				958202902899AAE00095F87A /* Assets.xcassets */,
 				958202952899AAE00095F87A /* Info.plist */,
 			);
@@ -229,6 +301,8 @@
 			children = (
 				958202C028A240320095F87A /* Metadata.swift */,
 				958202F028A29E750095F87A /* GenericSubCategory.swift */,
+				95DD611028A5396E003C3C15 /* CardSearch.swift */,
+				95DD616228AAFF7C003C3C15 /* ClassCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +340,8 @@
 			isa = PBXGroup;
 			children = (
 				958202E128A26F270095F87A /* Typealiases.swift */,
+				95DD612228A8688D003C3C15 /* UIImageView+LoadImage.swift */,
+				95DD613E28A8B8D2003C3C15 /* UIViewController+QoL.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,6 +363,101 @@
 			isa = PBXGroup;
 			children = (
 				958202F328A2F4270095F87A /* GenericSubCategoryTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95DD611228A54873003C3C15 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				95DD611F28A838E5003C3C15 /* Views */,
+				95DD611328A548EA003C3C15 /* CardsCoordinator.swift */,
+				95DD611428A548EA003C3C15 /* CardsPresenter.swift */,
+				95DD611528A548EA003C3C15 /* CardsViewController.swift */,
+				95DD611628A548EA003C3C15 /* CardsProtocols.swift */,
+				95DD611728A548EA003C3C15 /* CardsRepository.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		95DD611F28A838E5003C3C15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95DD612028A838FE003C3C15 /* CardTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95DD612428A884DF003C3C15 /* CardDetails */ = {
+			isa = PBXGroup;
+			children = (
+				95DD612528A884F3003C3C15 /* CardDetailsCoordinator.swift */,
+				95DD612628A884F3003C3C15 /* CardDetailsPresenter.swift */,
+				95DD612728A884F3003C3C15 /* CardDetailsViewController.swift */,
+				95DD612828A884F3003C3C15 /* CardDetailsProtocols.swift */,
+				95DD612928A884F3003C3C15 /* CardDetailsRepository.swift */,
+			);
+			path = CardDetails;
+			sourceTree = "<group>";
+		};
+		95DD613128A8B6B0003C3C15 /* CustomCards */ = {
+			isa = PBXGroup;
+			children = (
+				95DD614328A8BE53003C3C15 /* Views */,
+				95DD613228A8B6F3003C3C15 /* CustomCardsCoordinator.swift */,
+				95DD613328A8B6F3003C3C15 /* CustomCardsPresenter.swift */,
+				95DD613428A8B6F3003C3C15 /* CustomCardsViewController.swift */,
+				95DD613528A8B6F3003C3C15 /* CustomCardsProtocols.swift */,
+				95DD613628A8B6F3003C3C15 /* CustomCardsRepository.swift */,
+			);
+			path = CustomCards;
+			sourceTree = "<group>";
+		};
+		95DD614028A8B8F6003C3C15 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				95DD614128A8B905003C3C15 /* LoadingIndicatorViewController.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		95DD614328A8BE53003C3C15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95DD614428A8BE84003C3C15 /* CustomCardsItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95DD614628A9E3CC003C3C15 /* CreateCustomCard */ = {
+			isa = PBXGroup;
+			children = (
+				95DD614928A9E404003C3C15 /* CreateCustomCardCoordinator.swift */,
+				95DD614A28A9E404003C3C15 /* CreateCustomCardPresenter.swift */,
+				95DD614B28A9E404003C3C15 /* CreateCustomCardViewController.swift */,
+				95DD614C28A9E404003C3C15 /* CreateCustomCardProtocols.swift */,
+				95DD614D28A9E404003C3C15 /* CreateCustomCardRepository.swift */,
+			);
+			path = CreateCustomCard;
+			sourceTree = "<group>";
+		};
+		95DD615528AAE7FA003C3C15 /* ClassesCategories */ = {
+			isa = PBXGroup;
+			children = (
+				95DD616428ADBF4E003C3C15 /* Views */,
+				95DD615628AAE810003C3C15 /* ClassesCategoriesCoordinator.swift */,
+				95DD615728AAE810003C3C15 /* ClassesCategoriesPresenter.swift */,
+				95DD615828AAE810003C3C15 /* ClassesCategoriesViewController.swift */,
+				95DD615928AAE810003C3C15 /* ClassesCategoriesProtocols.swift */,
+				95DD615A28AAE810003C3C15 /* ClassesCategoriesRepository.swift */,
+			);
+			path = ClassesCategories;
+			sourceTree = "<group>";
+		};
+		95DD616428ADBF4E003C3C15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95DD616528ADBF61003C3C15 /* ClassCategoryViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -564,27 +735,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				958202C728A242BB0095F87A /* APISupport.swift in Sources */,
+				95DD612D28A884F3003C3C15 /* CardDetailsViewController.swift in Sources */,
 				958202EA28A29E160095F87A /* GenericSubCategoriesCoordinator.swift in Sources */,
 				958202EB28A29E160095F87A /* GenericSubCategoriesPresenter.swift in Sources */,
+				95DD615F28AAE810003C3C15 /* ClassesCategoriesProtocols.swift in Sources */,
 				958202DC28A26DD60095F87A /* R.generated.swift in Sources */,
 				958202EE28A29E160095F87A /* GenericSubCategoriesRepository.swift in Sources */,
+				95DD613928A8B6F3003C3C15 /* CustomCardsPresenter.swift in Sources */,
+				95DD615028A9E404003C3C15 /* CreateCustomCardPresenter.swift in Sources */,
 				958202E228A26F270095F87A /* Typealiases.swift in Sources */,
 				958202D328A258E20095F87A /* CategoriesViewController.swift in Sources */,
 				958202D428A258E20095F87A /* CategoriesProtocols.swift in Sources */,
 				958202ED28A29E160095F87A /* GenericSubCategoriesProtocols.swift in Sources */,
+				95DD615E28AAE810003C3C15 /* ClassesCategoriesViewController.swift in Sources */,
+				95DD616028AAE810003C3C15 /* ClassesCategoriesRepository.swift in Sources */,
+				95DD611A28A548EA003C3C15 /* CardsPresenter.swift in Sources */,
 				958202C928A243190095F87A /* Endpoint.swift in Sources */,
+				95DD614228A8B905003C3C15 /* LoadingIndicatorViewController.swift in Sources */,
 				958202B92899AF940095F87A /* HomeTabBarViewController.swift in Sources */,
+				95DD614F28A9E404003C3C15 /* CreateCustomCardCoordinator.swift in Sources */,
+				95DD613F28A8B8D2003C3C15 /* UIViewController+QoL.swift in Sources */,
 				958202F128A29E750095F87A /* GenericSubCategory.swift in Sources */,
+				95DD612F28A884F3003C3C15 /* CardDetailsRepository.swift in Sources */,
+				95DD612C28A884F3003C3C15 /* CardDetailsPresenter.swift in Sources */,
+				95DD615128A9E404003C3C15 /* CreateCustomCardViewController.swift in Sources */,
+				95DD615D28AAE810003C3C15 /* ClassesCategoriesPresenter.swift in Sources */,
 				958202F428A2F4270095F87A /* GenericSubCategoryTableViewCell.swift in Sources */,
+				95DD613B28A8B6F3003C3C15 /* CustomCardsProtocols.swift in Sources */,
+				95DD612128A838FE003C3C15 /* CardTableViewCell.swift in Sources */,
+				95DD614528A8BE84003C3C15 /* CustomCardsItemView.swift in Sources */,
 				958202D228A258E20095F87A /* CategoriesPresenter.swift in Sources */,
+				95DD612E28A884F3003C3C15 /* CardDetailsProtocols.swift in Sources */,
 				958202D128A258E20095F87A /* CategoriesCoordinator.swift in Sources */,
 				958202C128A240320095F87A /* Metadata.swift in Sources */,
+				95DD616328AAFF7C003C3C15 /* ClassCategory.swift in Sources */,
 				958202882899AADE0095F87A /* AppDelegate.swift in Sources */,
+				95DD615228A9E404003C3C15 /* CreateCustomCardProtocols.swift in Sources */,
+				95DD613828A8B6F3003C3C15 /* CustomCardsCoordinator.swift in Sources */,
 				958202C528A242880095F87A /* API.swift in Sources */,
+				95DD611928A548EA003C3C15 /* CardsCoordinator.swift in Sources */,
+				95DD611B28A548EA003C3C15 /* CardsViewController.swift in Sources */,
+				95DD612B28A884F3003C3C15 /* CardDetailsCoordinator.swift in Sources */,
+				95DD615C28AAE810003C3C15 /* ClassesCategoriesCoordinator.swift in Sources */,
+				95DD613C28A8B6F3003C3C15 /* CustomCardsRepository.swift in Sources */,
+				95DD616628ADBF61003C3C15 /* ClassCategoryViewCell.swift in Sources */,
 				958202D928A26BB40095F87A /* CategoryItemView.swift in Sources */,
+				95DD611C28A548EA003C3C15 /* CardsProtocols.swift in Sources */,
+				95DD615328A9E404003C3C15 /* CreateCustomCardRepository.swift in Sources */,
 				9582028A2899AADE0095F87A /* SceneDelegate.swift in Sources */,
 				958202D528A258E20095F87A /* CategoriesRepository.swift in Sources */,
+				95DD613A28A8B6F3003C3C15 /* CustomCardsViewController.swift in Sources */,
+				95DD611D28A548EA003C3C15 /* CardsRepository.swift in Sources */,
 				958202EC28A29E160095F87A /* GenericSubCategoriesViewController.swift in Sources */,
+				95DD612328A8688D003C3C15 /* UIImageView+LoadImage.swift in Sources */,
+				95DD611128A5396E003C3C15 /* CardSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

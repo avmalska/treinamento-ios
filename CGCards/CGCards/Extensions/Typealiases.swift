@@ -8,3 +8,5 @@
 import Foundation
 
 typealias Localizable = R.string.localizable
+typealias Colors = R.color
+typealias Images = R.image

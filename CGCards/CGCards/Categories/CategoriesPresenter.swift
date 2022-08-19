@@ -51,7 +51,14 @@ extension CategoriesPresenter: CategoriesPresenterProtocol {
     }
     
     func classesTouched() {
+        var classesCategories: [ClassCategory] = []
         
+        metadata?.classes.forEach({ value in
+            let classCategory = ClassCategory(id: value.id, name: value.name, slug: value.slug, cardId: value.cardID)
+            classesCategories.append(classCategory)
+        })
+        
+        coordinator.openClassesCategories(classesCategories: classesCategories, subCategoryType: .classes)
     }
     
     func spellSchoolsTouched() {
@@ -66,6 +73,7 @@ extension CategoriesPresenter: CategoriesPresenterProtocol {
     }
     
     func viewDidLoad() {
+        view?.showLoadingIndicator()
         repository.getMetadata()
     }
 
@@ -74,10 +82,14 @@ extension CategoriesPresenter: CategoriesPresenterProtocol {
 extension CategoriesPresenter: CategoriesRepositoryOutputProtocol {
     func getMetadataSuccess(with metadata: Metadata) {
         self.metadata = metadata
+        
+        DispatchQueue.main.async {
+            self.view?.hideLoadingIndicator()
+        }
     }
     
     func getMetadataFailure(with error: APIError) {
-        print("erro")
+
     }
     
     

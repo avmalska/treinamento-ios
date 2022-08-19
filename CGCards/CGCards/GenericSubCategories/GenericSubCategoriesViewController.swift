@@ -39,7 +39,7 @@ internal class GenericSubCategoriesViewController: UIViewController {
 
 extension GenericSubCategoriesViewController {
     func configViews() {
-        view.backgroundColor = .white
+        view.backgroundColor = Colors.fundo()
         
         tableView.delegate = presenter
         tableView.dataSource = presenter

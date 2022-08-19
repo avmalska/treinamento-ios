@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "hearthstone_raritiy.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
